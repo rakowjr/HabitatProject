@@ -1,0 +1,250 @@
+﻿
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+* {
+    font-family: Arial;
+}
+
+h1 { font-size: 2.25em;  /* 16x2.25=36 */ }
+
+h2 { font-size: 1.5em;   /* 16x1.5=24 */ }
+
+h3 { font-size: 1.125em; /* 16x1.125=18 */ }
+
+h4 { font-size: 0.875em; /* 16x0.875=14 */ }
+
+p  { font-size: 0.75em;  /* 16x0.75=12 */ }
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+html, button, input, select, textarea {
+	font-family: sans-serif;
+	color: #2f568c;
+}
+/*added from habitatstyletest*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    border-top: solid 6px #e3e2df;
+    font:14px Arial, Helvetica, sans-serif;
+    color: #817969;
+}
+
+#container {
+    background:url(../img/bg.png) repeat-x top #fff;   
+}
+
+header .wrapper{
+    position: relative;
+    height: 57px;
+}
+
+.wrapper{
+    width: 1010px;
+    margin: 0 auto;
+}
+
+header #logo{    
+    background:url(../img/logo.png);
+    width:320px;
+    height:167px;
+    text-decoration:none;
+    font-size:0em;
+    text-indent:-99999px;
+    display:block;
+    position:relative;
+    /*position:absolute;*/
+    top:0;
+    left:-10px;
+    z-index:1000;
+}
+
+/*header nav{
+    background:url(../img/nav.png) repeat-x;
+    height:69px;
+    -webkit-box-shadow: 0 3px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 3px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 2px rgba(0,0,0,0.15);
+    position:relative;
+    z-index:999;
+}*/
+
+/* begin nav */
+#navBar {
+    background: url(../img/nav.png) repeat-x;
+    height: 69px;
+    -webkit-box-shadow: 0 3px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 3px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 2px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 999;
+}
+
+header nav ul {
+    padding-left: 445px; /*adjust position where nav items start*/
+    width: 975px;
+    margin: 0 auto;
+}
+
+header nav ul li {
+    background: url(../img/nav-s.gif) no-repeat left center;
+    display: block;
+    float: left;
+    position: relative;
+    padding: 0 14px;
+    top: 0px;
+    left: 0px;
+    width: 110px; /*width of each nav item*/
+}
+
+header nav ul li.first {
+    background: none;
+}
+
+header nav ul li a {
+    display: block;
+    float: left;
+    line-height: 69px;
+    height: 69px;
+    font-size: 16px; /*adjust nav font size*/
+    color: #fff;
+    text-decoration: none;
+    /*font-family: 'Miso';*/
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.33);
+    font-weight: 800;
+}
+
+header nav ul li a:hover,
+header navr ul li a.active,
+header nav ul li a.hover {
+    color: #ffcb05;
+}
+
+header nav ul div {
+    width: 190px;
+    position: absolute;
+    top: 57px;
+    left: 0;
+    padding-top: 11px;
+    visibility: hidden;
+}
+
+header nav ul div img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 77px;
+}
+
+header nav ul ul {
+    width: auto;
+    padding: 8px 0;
+    border: solid 2px #fff;
+    background: #817a68;
+    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.75);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.75);
+}
+
+header nav ul ul li {
+    background: none;
+    float: none;
+}
+
+header nav ul ul li a {
+    float: none;
+    height: auto;
+    line-height: normal;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #fff !important;
+    text-shadow: 0 0 0;
+    padding: 5px 0 5px 20px;
+}
+
+header nav ul ul li a:hover {
+    color: #ffcb05 !important;
+}
+/* end nav */
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h 
+a:hover, a:active {
+	outline: 0;
+}
+a img {
+    border: none;
+	outline: none;
+}
+ul, ol {
+	margin: 1em 0;
+	padding: 0 0 0 40px;
+}
+dd {
+	margin: 0 0 0 40px;
+}
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}*/
+
+#sideContent {
+    width: 320px;
+    height: 875px;
+    background: #e3e2df; /**/
+    margin-top: -10px;
+    float: left;
+    border-right: 6px groove #b5b5b5;
+}
+
+.sideImage{
+    width: 250px;
+    padding-left:35px;
+    padding-top: 50px;
+}
+
+#volunteerContent{
+    width: 920px;
+    margin-left: 320px;
+    margin-top: -130px;
+    background: #FFF;
+}
+
+.volunteerInfoTable {
+    width: 450px;
+    height: 500px;
+    padding-top: 200px;
+    margin-left: 225px;
+}
+.volunteerInfoTable tr{
+    height: 45px;
+}
+.volInfoColOne {
+    width: 200px;
+    text-align: right;
+    padding-right: 25px;
+}
+.volInfoColTwo{
+    width: 250px;
+}
+.volInfoTB, .volInfoDdl{
+    width: 230px;
+    height: 30px;
+    font-size: large;
+}

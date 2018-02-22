@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="styles/StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <!-- begin header -->
+        <header>
+            <div class="wrapper">
+                <a href="https://www.habitatforsyth.org" id="logo">Habitat for Humanity</a>
+            </div>
+            <!-- beging nav -->
+            <nav id="navBar" class="clearfix ">
+                <ul>
+                    <li class="page_item page-item-6 current_page_item"><a href="#">About Us</a>
+						<div>
+							<ul class=''>
+								<li class="page_item page-item-8"><a href="#">Mission and Values</a></li>
+								<li class="page_item page-item-2961"><a href="#">News</a></li>
+								<li class="page_item page-item-10"><a href="#">Staff</a></li>
+								<li class="page_item page-item-119"><a href="#">Board of Directors</a></li>
+								<li class="page_item page-item-6808"><a href="#">Our Partners</a></li>
+								<li class="page_item page-item-1747"><a href="#">Financial Information</a></li>
+								<li class="page_item page-item-125"><a href="#">Employment</a></li>
+								<li class="page_item page-item-107"><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="page_item page-item-86"><a href="#">Get Involved</a>
+						<div>
+							<ul class=''>
+								<li class="page_item page-item-161"><a href="#">Volunteer</a></li>
+								<li class="page_item page-item-5680"><a href="#">Habitat Builds</a></li>
+								<li class="page_item page-item-6605"><a href="#">Special Events</a></li>
+								<li class="page_item page-item-6363"><a href="#">Collegiate Challenge</a></li>
+								<li class="page_item page-item-419"><a href="#">Young Professionals</a></li>
+								<li class="page_item page-item-323"><a href="#">Youth Ambassadors</a></li>
+								<li class="page_item page-item-2454"><a href="#">Global Village</a></li>
+								<li class="page_item page-item-840"><a href="#">Class Calendar</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="page_item page-item-89"><a href="#">Housing</a>
+						<div>
+							<ul class=''>
+								<li class="page_item page-item-279"><a href="#">Qualify</a></li>
+								<li class="page_item page-item-285"><a href="#">Preliminary Application</a></li>
+								<li class="page_item page-item-293"><a href="#">Orientation Schedule</a></li>
+								<li class="page_item page-item-6898"><a href="#">Partner Family Spotlight</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="page_item page-item-3353"><a href="#">Education</a>
+						<div>
+							<ul class=''>
+								<li class="page_item page-item-3629"><a href="#">Computer Lab</a></li>
+								<li class="page_item page-item-3407"><a href="#">Education Center</a></li>
+								<li class="page_item page-item-9430"><a href="#">Information for Veterans</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="page_item page-item-95"><a href="#">ReStores</a>
+						<div>
+							<ul class=''>
+								<li class="page_item page-item-189"><a href="#">Donate</a></li>
+								<li class="page_item page-item-245"><a href="#">Shop</a></li>
+								<li class="page_item page-item-369"><a href="#">Volunteer</a></li>
+								<li class="page_item page-item-220"><a href="#">ReStore Mission</a></li>
+								<li class="page_item page-item-6614"><a href="#">ReStore Policy</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="page_item page-item-1088"><a href="#">Donate</a>
+						<div>
+							<ul class=''>
+								<li class="page_item page-item-5463"><a href="#">Monthly Donations</a></li>
+								<li class="page_item page-item-2288"><a href="#">Write a Check</a></li>
+								<li class="page_item page-item-2287"><a href="#">Planned Giving</a></li>
+								<li class="page_item page-item-2429"><a href="#">Corporate Giving</a></li>
+								<li class="page_item page-item-2295"><a href="#">Donate Land</a></li>
+								<li class="page_item page-item-1093"><a href="#">Cars for Homes</a></li>
+							</ul>
+						</div>
+					</li>
+                </ul>
+            </nav>
+            <!-- end nav -->
+        </header>
+        <!-- end header -->
+        <!-- begin content -->
+        <aside id="sideContent">
+            <div>
+                <img alt="" src="img/GreatStuff250x228.png" class="sideImage" style="margin-top: 35px" />
+                <img alt="" src="img/GreatPrices250x199.png" class="sideImage" />
+                <img alt="" src="img/GreatCause250x203.png" class="sideImage" />
+            </div>
+        </aside>
+        <section >
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+            </asp:ContentPlaceHolder>
+        </section>
+        <!-- end content -->
+    </div>   
+    </form>
+</body>
+</html>
